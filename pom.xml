@@ -82,7 +82,7 @@
     </build>
     <distributionManagement>
         <repository>
-            <id>nexus-releases</id>
+            <id>deploymentRepo</id>
             <url>localhost:8081/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
