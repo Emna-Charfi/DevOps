@@ -32,7 +32,7 @@ pipeline {
 				sh'mvn clean deploy -Dmaven.test.skip=true -Dresume=false'
 			      }
 		 } 
-		 stage('Docker Build and Push') {
+		/* stage('Docker Build and Push') {
                        steps {
                                withDockerRegistry([credentialsId: "dockerhub", url: ""]) {
          			  sh 'printenv'
@@ -41,8 +41,8 @@ pipeline {
          			  sh 'docker push rania24/springapp:latest'
          			}
      			  }
-    		}
-	/*	 stage('Docker compose') {
+    		}*/
+		 stage('Docker compose') {
       		      steps {
          parallel(
            "Docker compose": {
@@ -64,6 +64,6 @@ pipeline {
 			       failure {
 				       echo "failed"
 				
-		                }*/
+		                }
 		}
 }
