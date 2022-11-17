@@ -32,16 +32,16 @@ pipeline {
 				sh'mvn clean deploy -Dmaven.test.skip=true -Dresume=false'
 			      }
 		 } 
-		/*  stage('Docker Build and Push') {
+		 stage('Docker Build and Push') {
                        steps {
                                withDockerRegistry([credentialsId: "docker-hub", url: ""]) {
          			  sh 'printenv'
-        			  sh 'docker build -t louay123/louaymed .'
-	 			  sh 'docker tag louay123/louaymed louay123/louaymed:latest'
-         			  sh 'docker push louay123/louaymed:latest'
+        			  sh 'docker build -t rania24/springapp .'
+	 			  sh 'docker tag rania24/springapp rania24/springapp:latest'
+         			  sh 'docker push rania24/springapp:latest'
          			}
      			  }
-    		}*/
+    		}
 	/*	 stage('Docker compose') {
       		      steps {
          parallel(
