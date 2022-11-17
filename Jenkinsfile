@@ -44,26 +44,11 @@ pipeline {
     		}*/
 		 stage('Docker compose') {
       		      steps {
-         parallel(
-           "Docker compose": {
+         
                sh 'docker-compose up '
-           },
-           "Delete running containers": {
-		       sh 'sleep 3m '
-               sh 'docker rm -f ci-spring ci-db '
-           }
-         )
-       }
-     }
-	}  
-			post {
-				success {
-
-					echo "passed"
-				}    
-			       failure {
-				       echo "failed"
-				
-		                }
-		}
+          
+    		 }
+	     }  
+	
+	}
 }
