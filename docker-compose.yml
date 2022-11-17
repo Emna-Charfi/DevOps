@@ -1,12 +1,7 @@
 version: '3.7'
 services:
-  ci-app-front:
-    container_name: ci-angular
-    image: docker.io/louay123/louayfront:latest
-    ports:
-      - "8888:80"
-    networks:
-      - ci-network
+
+
   ci-db:
     container_name: ci-db
     image: mysql:8.0
@@ -25,7 +20,7 @@ services:
 
   ci-app:
     container_name: ci-spring
-    image: docker.io/louay123/louaymed:latest
+    image: docker.io/rania24/springapp:latest
     ports:
       - "8089:8089"
     networks:
