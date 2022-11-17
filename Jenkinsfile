@@ -34,7 +34,7 @@ pipeline {
 		 } 
 		 stage('Docker Build and Push') {
                        steps {
-                               withDockerRegistry([credentialsId: "docker-hub", url: ""]) {
+                               withDockerRegistry([credentialsId: "dockerhub", url: ""]) {
          			  sh 'printenv'
         			  sh 'docker build -t rania24/springapp .'
 	 			  sh 'docker tag rania24/springapp rania24/springapp:latest'
