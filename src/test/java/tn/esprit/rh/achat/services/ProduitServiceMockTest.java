@@ -14,10 +14,10 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.transaction.annotation.Transactional;
-import com.esprit.examen.entities.Produit;
-import com.esprit.examen.entities.Stock;
-import com.esprit.examen.repositories.ProduitRepository;
-import com.esprit.examen.repositories.StockRepository;
+import tn.esprit.rh.achat.entities.Produit;
+import tn.esprit.rh.achat.entities.Stock;
+import tn.esprit.rh.achat.repositories.ProduitRepository;
+import tn.esprit.rh.achat.repositories.StockRepository;
 
 @ExtendWith(MockitoExtension.class)
 public class ProduitServiceMockTest {
