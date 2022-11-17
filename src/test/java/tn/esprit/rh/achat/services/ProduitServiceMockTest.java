@@ -19,6 +19,9 @@ import tn.esprit.rh.achat.entities.Stock;
 import tn.esprit.rh.achat.repositories.ProduitRepository;
 import tn.esprit.rh.achat.repositories.StockRepository;
 
+
+@SpringBootTest
+@TestMethodOrder(OrderAnnotation.class)
 @ExtendWith(MockitoExtension.class)
 public class ProduitServiceMockTest {
 
