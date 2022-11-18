@@ -57,11 +57,7 @@
 
 
     </dependencies>
-         <configuration>
-					<serverId>nexus</serverId>
-					<nexusUrl>http://192.168.1.222:8081/</nexusUrl>
-					<skipStaging>true</skipStaging>
-				</configuration>
+
 
     <build>
         <plugins>
